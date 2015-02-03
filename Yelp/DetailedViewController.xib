@@ -32,7 +32,7 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Panda Express" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EK-bk-qm5">
-                    <rect key="frame" x="20" y="296.5" width="145.5" height="26.5"/>
+                    <rect key="frame" x="20" y="296" width="145.5" height="26.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
@@ -50,7 +50,7 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thai Seafood Salad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65E-cL-4YZ">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thai Seafood Salad" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65E-cL-4YZ">
                     <rect key="frame" x="25" y="471" width="126" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -62,7 +62,7 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88 Division St, Mission Bay" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKe-Tl-ITa">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88 Division St, Mission Bay" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKe-Tl-ITa">
                     <rect key="frame" x="25" y="433" width="175.5" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -73,6 +73,7 @@
             <constraints>
                 <constraint firstItem="K5k-nf-VcG" firstAttribute="top" secondItem="7EK-bk-qm5" secondAttribute="bottom" constant="17.5" id="4nL-d2-Nfo"/>
                 <constraint firstItem="Gxj-9B-3Lo" firstAttribute="leading" secondItem="CEB-SY-l0M" secondAttribute="trailing" constant="68.5" id="8Rb-aK-DEQ"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7EK-bk-qm5" secondAttribute="trailing" constant="25" id="Azw-WH-cmT"/>
                 <constraint firstItem="CEB-SY-l0M" firstAttribute="top" secondItem="K5k-nf-VcG" secondAttribute="bottom" constant="20" id="EtO-LR-DF3"/>
                 <constraint firstItem="nKe-Tl-ITa" firstAttribute="top" secondItem="RBy-a0-91a" secondAttribute="bottom" constant="170" id="HMM-QI-rRb"/>
                 <constraint firstItem="RBy-a0-91a" firstAttribute="top" secondItem="CEB-SY-l0M" secondAttribute="bottom" constant="-305" id="JJV-nO-GfA"/>
@@ -80,6 +81,7 @@
                 <constraint firstItem="7EK-bk-qm5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="296.5" id="SDH-1V-fEb"/>
                 <constraint firstItem="CEB-SY-l0M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="Sos-8w-Lw7"/>
                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="65E-cL-4YZ" secondAttribute="bottom" constant="20" id="UCy-8V-ASy"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nKe-Tl-ITa" secondAttribute="trailing" constant="25" id="UbR-5Y-8DZ"/>
                 <constraint firstItem="CEB-SY-l0M" firstAttribute="centerY" secondItem="Gxj-9B-3Lo" secondAttribute="centerY" constant="46" id="ZBD-Yo-B68"/>
                 <constraint firstAttribute="trailing" secondItem="Gxj-9B-3Lo" secondAttribute="trailing" constant="19.5" id="aEs-sl-qIk"/>
                 <constraint firstItem="RBy-a0-91a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="65" id="eeH-b3-fOc"/>
@@ -87,6 +89,7 @@
                 <constraint firstItem="K5k-nf-VcG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="kZT-vx-rRc"/>
                 <constraint firstItem="65E-cL-4YZ" firstAttribute="top" secondItem="nKe-Tl-ITa" secondAttribute="bottom" constant="21" id="r4f-fQ-AHG"/>
                 <constraint firstItem="65E-cL-4YZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="xNW-xF-diU"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="65E-cL-4YZ" secondAttribute="trailing" constant="25" id="yG3-Um-2Ca"/>
                 <constraint firstItem="nKe-Tl-ITa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="yph-k0-9I9"/>
             </constraints>
             <point key="canvasLocation" x="256" y="379"/>

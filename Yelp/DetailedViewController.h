@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Business.h"
 
 @interface DetailedViewController : UIViewController
 
@@ -18,4 +19,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *addressLabel;
 @property (weak, nonatomic) IBOutlet UILabel *categoryLabel;
 
+
+@property (strong,nonatomic) Business *selectedBusiness;
 @end

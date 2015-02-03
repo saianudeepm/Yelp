@@ -11,6 +11,7 @@
 #import "YelpListingCell.h"
 #import "Business.h"
 #import "FilterViewController.h"
+#import "DetailedViewController.h"
 
 NSString * const kYelpConsumerKey = @"vxKwwcR_NMQ7WaEiQBK_CA";
 NSString * const kYelpConsumerSecret = @"33QCvh5bIF5jIHR5klQr7RtBDhQ";
@@ -103,7 +104,7 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     //hide the searchbar and keyboard when user touches the tablecell or the map
     UITapGestureRecognizer *tableGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
     UITapGestureRecognizer *mapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
-    [self.tableView addGestureRecognizer:tableGestureRecognizer];
+    //[self.tableView addGestureRecognizer:tableGestureRecognizer];
     [self.mapView addGestureRecognizer:mapGestureRecognizer];
 
     
@@ -167,6 +168,19 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
     [self hideKeyboard];
+}
+
+// takes to movie detailed view
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    // go to detailed page view on touch of cell only when no network error
+    if (self.businessListingArray!=nil) {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        DetailedViewController *dvc = [[DetailedViewController alloc] init];
+        Business *selectedBusiness = [self.businessListingArray objectAtIndex:indexPath.row];
+        [dvc setSelectedBusiness:selectedBusiness];
+        [self.navigationController pushViewController:dvc animated:YES];
+    }
+    
 }
 
 #pragma mark - private methods

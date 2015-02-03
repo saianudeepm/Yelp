@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="mapView" destination="KnD-O8-4Qm" id="DRj-uC-aRy"/>
+                <outlet property="tableView" destination="8tw-v5-oge" id="PI5-WI-psh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="8tw-v5-oge">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KnD-O8-4Qm">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </mapView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8tw-v5-oge" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3PW-x9-9uO"/>
+                <constraint firstItem="KnD-O8-4Qm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3kQ-aO-J4f"/>
+                <constraint firstItem="KnD-O8-4Qm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DFx-FO-oXs"/>
+                <constraint firstAttribute="bottom" secondItem="KnD-O8-4Qm" secondAttribute="bottom" id="EeO-ao-9fi"/>
+                <constraint firstAttribute="trailing" secondItem="KnD-O8-4Qm" secondAttribute="trailing" id="JUP-Rn-AVt"/>
+                <constraint firstItem="8tw-v5-oge" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Tv8-Vx-spB"/>
+                <constraint firstAttribute="bottom" secondItem="8tw-v5-oge" secondAttribute="bottom" id="Yt6-6O-Cxd"/>
+                <constraint firstAttribute="trailing" secondItem="8tw-v5-oge" secondAttribute="trailing" id="cja-X4-FoJ"/>
+            </constraints>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

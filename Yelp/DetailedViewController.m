@@ -17,6 +17,8 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    self.navigationController.navigationBar.barTintColor =
+    [UIColor colorWithRed:255.0 / 255.0 green:0.0 / 255.0 blue:0.0 / 255.0 alpha:1];
     // Do any additional setup after loading the view from its nib.
     Business *selectedBusiness = self.selectedBusiness;
     [self setBusinessDetailedView:selectedBusiness];

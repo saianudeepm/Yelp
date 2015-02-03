@@ -78,10 +78,14 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     
     self.title=@"Yelp";
     
+
     //set up the filter and map bar buttons
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Filter" style:UIBarButtonItemStylePlain target:self action:@selector(onFilterButtonPress)];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Map" style:UIBarButtonItemStylePlain target:self action:@selector(onMapButtonPress)];
+    
+    [self.navigationItem.leftBarButtonItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]} forState:UIControlStateNormal];
+    [self.navigationItem.rightBarButtonItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]} forState:UIControlStateNormal];
     
     //set up the search bar
     self.searchBar = [UISearchBar new];
@@ -178,6 +182,8 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
         DetailedViewController *dvc = [[DetailedViewController alloc] init];
         Business *selectedBusiness = [self.businessListingArray objectAtIndex:indexPath.row];
         [dvc setSelectedBusiness:selectedBusiness];
+         self.navigationController.navigationBar.barTintColor =
+                [UIColor colorWithRed:255.0 / 255.0 green:0.0 / 255.0 blue:0.0 / 255.0 alpha:1];
         [self.navigationController pushViewController:dvc animated:YES];
     }
     
@@ -235,8 +241,10 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     
     fc.delegate = self;
     
-    UINavigationController *nc = [[UINavigationController alloc]initWithRootViewController:fc];
-    [self presentViewController:nc animated:YES completion:nil];
+    UINavigationController *unc = [[UINavigationController alloc]initWithRootViewController:fc];
+    unc.navigationBar.barTintColor = [UIColor colorWithRed:255.0 / 255.0 green:0.0 / 255.0 blue:0.0 / 255.0 alpha:1];
+    unc.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+    [self presentViewController:unc animated:YES completion:nil];
     
 }
 
